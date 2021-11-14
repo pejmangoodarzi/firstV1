@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>پاپ آپ</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/custome.css">
+
+</head>
+
+
+<body>
+  <header class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3" id=scornum>Header</h1>
+  </header>
+  <nav class="container-fluid bg-light d-flex justify-content-between pt-2" dir="rtl">
+    <ul class="d-flex">
+      <li>
+        <a href="index.html">
+          صفحه اصلی
+        </a>
+      </li>
+    </ul>
+    <h3>logo name</h3>
+  </nav>
+
+  <section class="container-fluid  Recruitment  p-5" dir="rtl" style="height: 1000px;">
+    <article>
+      <div class="wow bounceInUp text-center">
+        <div class="row justify-content-center text-dark">
+          <div class="col-12 col-lg-12 col-md-12 bg-form-style mt-5 text-right p-3">
+            <h3>توضیحات تمرین</h3>
+            <p>
+          هنگامی که scroll ما به مرکز صفحه رسید یک popup bootstrap باز شود
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center text-dark" style="margin-top: 200px;">
+        <div class="col-12 col-lg-6 col-md-6 mt-5">
+          <!-- Button trigger modal -->
+          <button style="display: none;" id="scrollToTop" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <footer class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3">Footer</h1>
+  </footer>
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/caike-jQuery-Simple-Timer-39a70b0/jquery.simple.timer.js"></script>
+  <script src="./assets/js/custome.js"></script>
+
+  <!-- countdown timer -->
+  <script>
+    $(function () {
+      $('.timer-quick').startTimer();
+    })
+  </script>
+  <script>
+    // $(window).scroll(function (e) {
+    //   if ($(this).scrollTop() > 100) {
+    //     // $('#scrollToTop').fadeIn();
+
+
+    //     e.stopImmediatePropagation();
+    //     if(e.isImmediatePropagationStopped){
+    //       alert("بزرگترترتر از 100")
+    //     }
+    //   } else {
+    //     // $('#scrollToTop').fadeOut();
+    //     alert("کوچکتر از 100")
+    //   }
+    // });
+
+    $(document).ready(function () {
+      // var horizontalCenter = Math.floor(window.innerWidth / 2);
+      // var verticalCener = Math.floor(window.innerHeight / 2);
+
+      // if(horizontalCenter = Math.floor(window.innerWidth / 2) ,
+      // verticalCener = Math.floor(window.innerHeight / 2) ){
+      //   alert("ok");
+      // }
+
+      // var windowHeight = $(window).height();
+      // var scrollTop = $(window).scrollTop();
+      // var mid = scrollTop + Math.floor(windowHeight / 2);
+
+      // var offset = $(selector).offset();
+      // var top = offset.top;
+      // var left = offset.left;
+
+
+
+      // var mid = $(window).scrollTop() + Math.floor($(window).height() / 2);
+      // if ((window).scroll() == mid) {
+      //   alert("hala shod")
+      // };
+
+
+
+      // var horizontalCenter = Math.floor(window.innerWidth / 2);
+      // var verticalCener = Math.floor(window.innerHeight / 2);
+      // $(window).scroll(function () {
+      //   if ($(window).scrollTop() + $(window).height() == verticalCener) {
+      //     alert("bottom!");
+      //   }
+      // });
+
+
+      // var dochei = $(document).height() / 2;
+      // var winhei= $(window).height()/2;
+      //       $(window).scroll(function () {
+      //   if ($(window).scrollTop() == dochei) {
+      //     alert("bottom!");
+      //   }
+      // });
+
+
+      // if (window.scrollTop() == mid) {
+
+      //   alert("hello")
+      // };
+
+      var mid = $(window).scrollTop() + Math.floor($(window).height() / 2)
+     
+      $(window).scroll(function () {
+        if ($(this).scrollTop() >= mid) {
+          $('#exampleModal').css("display","block").addClass("show");
+        }
+         else {
+        //   $('#scrollToTop').fadeOut();
+        $('#exampleModal').css("display","none").addClass("hide");
+        }
+      });
+
+
+
+
+
+    });
+  </script>
+
+</body>
+
+</html>

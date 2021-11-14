@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>ریدایرکت پیج</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/custome.css">
+  <link rel="stylesheet" href="./assets/css/wow/animate.css">
+
+</head>
+
+
+<body>
+  <header class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3">Header</h1>
+  </header>
+  <nav class="container-fluid bg-light d-flex justify-content-between pt-2" dir="rtl">
+    <ul class="d-flex">
+      <li>
+        <a href="index.html">
+          صفحه اصلی
+        </a>
+      </li>
+    </ul>
+    <h3>logo name</h3>
+  </nav>
+  <style>
+
+  </style>
+  <section class="container-fluid  Recruitment  p-5" dir="rtl">
+    <article>
+      <div class="wow bounceInUp text-center">
+        <div class="row justify-content-center text-dark">
+          <div class="col-12 col-lg-12 col-md-12 bg-form-style mt-5 text-right p-3">
+            <h3>توضیحات تمرین</h3>
+            <p>
+              در این صفحه چندین تمرین وجود دارد
+              </br>
+              1- کار با کامپوننت wow.js
+              که همانطور که مشاهده میکنید این box توضیحات تمرین با این کامپوننت ظاهر میشود
+              </br>
+              2- جلوگیری از راست کلیک و همچنین جلوگیری از select کردن تگ های p
+              </br>
+              3- باید هنگامی که تایمر وارد کردن کد دریافتی به پایان رسید ، دکمه ای یا لیبلی تحت عنوان ارسال مجدد کد ظاهر
+              شود
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center text-dark">
+        <div class="col-12 col-lg-6 col-md-6 bg-form-style mt-5">
+          <form class="text-right p-5">
+            <div class="form-group">
+              <label for="phoneNumber">کد ارسال شده را وارد نمایید</label>
+              <input type="text" class="form-control" id="phoneNumber" aria-describedby="emailHelp"
+                placeholder=" _ _ _ _ _ _">
+              <small id="phoneNumberHelp" class="form-text text-muted" dir="ltr">
+                <div id="timercount" class="timer d-flex" data-seconds-left="5"></div>
+                <p class="text-left d-none" id="mojadda">ارسال مجدد کد</p>
+              </small>
+            </div>
+            <button type="submit" id="backtohome" class="btn btn-success float-left">
+              <a href="index.html">
+                بازگشت به صفحه اصلی
+              </a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3">Footer</h1>
+  </footer>
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/caike-jQuery-Simple-Timer-39a70b0/jquery.simple.timer.js"></script>
+  <script src="./assets/js/bundle.js"></script>
+  <script src="./assets/js/custome.js"></script>
+  <script src="./assets/js/wow/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <script>
+    setTimeout(function () {
+      $("#backtohome").css("background-color", "yellow")
+    }, 3000);
+
+    window.setTimeout(function () {
+      window.location.href = 'http://www.google.com';
+    }, 5000);
+
+
+
+    // setInterval(function () {
+    //   $("#backtohome").css("background-color", "yellow")
+    // }, 5000);
+  </script>
+</body>
+
+</html>

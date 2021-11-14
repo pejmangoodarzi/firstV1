@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>تمرین اول JQuery</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/custome.css">
+
+</head>
+
+
+<body>
+  <header class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3">Header</h1>
+  </header>
+  <nav class="container-fluid bg-light d-flex justify-content-between pt-2" dir="rtl">
+    <ul class="d-flex">
+      <li>
+        <a href="index.html">
+          صفحه اصلی
+        </a>
+      </li>
+    </ul>
+    <h3>logo name</h3>
+  </nav>
+
+  <section class="container-fluid  Recruitment  p-5" dir="rtl">
+    <article>
+      <div class="row justify-content-center text-dark">
+        <div class="col-12 col-lg-12 col-md-12 bg-form-style mt-5 text-right p-3">
+          <h3>توضیحات تمرین</h3>
+          <p>
+            در این تمرین ابتدا محل تایپ کد ملی در حالت disabled میباشد
+            که باید بعد از تیک زدن چک باکس ما به حالت enabled دربیاید
+            و زمانی که ما داریم کد ملی را تایپ میکنیم همزمان در تگ p زیرش نمایش داده شود
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-dark">
+        <div class="col-12 col-lg-6 col-md-6 bg-form-style mt-5">
+          <form class="text-right p-5">
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label mr-3" for="exampleCheck1">قوانین و مقررات استخدام را می پذیرم.</label>
+            </div>
+            <div class="form-group">
+              <label for="NationalCode">کد ملی</label>
+              <input type="number" class="form-control" id="NationalCode" aria-describedby="emailHelp"
+                placeholder="کد ملی خود را وارد نمایید." disabled>
+            </div>
+            <label for="ShowNationalCode">محل نمایش کد ملی</label>
+            <p class="pcode-style rounded" id="ShowNationalCode"></p>
+            <button type="submit" class="btn btn-success">ثبت نام</button>
+          </form>
+
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+  <footer class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3">Footer</h1>
+  </footer>
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/caike-jQuery-Simple-Timer-39a70b0/jquery.simple.timer.js"></script>
+  <script src="./assets/js/custome.js"></script>
+
+  <!-- countdown timer -->
+  <script>
+    $(function () {
+      $('.timer-quick').startTimer();
+    })
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>scroll</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/custome.css">
+
+</head>
+
+
+<body>
+  <header class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3">Header</h1>
+  </header>
+  <nav class="container-fluid bg-light d-flex justify-content-between pt-2" dir="rtl">
+    <ul class="d-flex">
+      <li>
+        <a href="index.html">
+          صفحه اصلی
+        </a>
+      </li>
+    </ul>
+    <h3>logo name</h3>
+  </nav>
+<style>
+  div {
+    height:800px;
+    background:red;
+}
+</style>
+
+  <div>Scroll Down</div>
+  <h1 id="scroll-to">I am The H1</h1>
+
+
+  <footer class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3">Footer</h1>
+  </footer>
+
+
+
+
+
+  <script src="./assets/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/caike-jQuery-Simple-Timer-39a70b0/jquery.simple.timer.js"></script>
+  <script src="./assets/js/custome.js"></script>
+
+  <!-- countdown timer -->
+  <script>
+    $(window).scroll(function () {
+      var hT = $('#scroll-to').offset().top,
+        hH = $('#scroll-to').outerHeight(),
+        wH =$(window).height(),
+        wS = $(this).scrollTop();
+      console.log((hT - wH), wS);
+      if (wS > (hT + hH - wH)) {
+        alert('you have scrolled to the h1!');
+      }
+    });</script>
+
+</body>
+
+</html>

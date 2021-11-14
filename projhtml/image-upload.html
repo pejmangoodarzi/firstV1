@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>آپلود عکس</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/custome.css">
+
+</head>
+
+
+<body>
+  <header class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3">Header</h1>
+  </header>
+  <nav class="container-fluid bg-light d-flex justify-content-between pt-2" dir="rtl">
+    <ul class="d-flex">
+      <li>
+        <a href="index.html">
+          صفحه اصلی
+        </a>
+      </li>
+    </ul>
+    <h3>logo name</h3>
+  </nav>
+
+  <style>
+    .col-ting {
+      width: 25em;
+      margin: 0 auto;
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+
+    .file-upload .image-box {
+      margin: 0 auto;
+      margin-top: 1em;
+      height: 15em;
+      width: 20em;
+      background: #d24d57;
+      cursor: pointer;
+      overflow: hidden;
+      border: 3px solid #fff;
+    }
+
+    .file-upload .image-box img {
+      height: 100%;
+      display: none;
+    }
+
+    .file-upload .image-box p {
+      position: relative;
+      top: 45%;
+      color: #fff;
+    }
+  </style>
+
+
+
+
+  <section class="container-fluid  Recruitment  p-5" dir="rtl">
+    <article>
+      <div class="wow bounceInUp text-center">
+        <div class="row justify-content-center text-dark">
+          <div class="col-12 col-lg-12 col-md-12 bg-form-style mt-5 text-right p-3">
+            <h3>توضیحات تمرین</h3>
+            <p>
+              داشتن یک تگ image خالی که با زدن دکمه و یا آپلود عکس، عکس 
+              انتخاب شده ما بجای ایمیج خالی قرار بگیرد
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center text-dark">
+        <div class="col-12 col-lg-6 col-md-6 bg-form-style mt-5">
+          <!-- image upload Start -->
+          <div class="col-ting">
+            <div class="control-group file-upload" id="file-upload1">
+              <div class="image-box text-center">
+                <p>محل بارگزاری عکس</p>
+                <img src="" alt="">
+              </div>
+              <div class="controls" style="display: none;">
+                <input type="file" name="contact_image_1" />
+              </div>
+            </div>
+          </div>
+          <!-- image upload END -->
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer class="container-fluid px-0 bg-info">
+    <h1 class="text-center mb-0 p-3">Footer</h1>
+  </footer>
+
+
+
+
+
+  <script src="./assets/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/caike-jQuery-Simple-Timer-39a70b0/jquery.simple.timer.js"></script>
+  <script src="./assets/js/custome.js"></script>
+
+  <!-- countdown timer -->
+  <script>
+    $(function () {
+      $('.timer-quick').startTimer();
+    });
+
+    $(".image-box").click(function (event) {
+      var previewImg = $(this).children("img");
+
+      $(this)
+        .siblings()
+        .children("input")
+        .trigger("click");
+
+      $(this)
+        .siblings()
+        .children("input")
+        .change(function () {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            var urll = e.target.result;
+            $(previewImg).attr("src", urll);
+            previewImg.parent().css("background", "transparent");
+            previewImg.show();
+            previewImg.siblings("p").hide();
+          };
+          reader.readAsDataURL(this.files[0]);
+        });
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>

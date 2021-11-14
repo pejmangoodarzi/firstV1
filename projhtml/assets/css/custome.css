@@ -1,0 +1,333 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/IRANSans/eot/IRANSansWeb(FaNum).eot');
+  src: url('../fonts/IRANSans/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
+
+    url('../fonts/IRANSans/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
+
+    url('../fonts/IRANSans/woff/IRANSansWeb(FaNum).woff') format('woff'),
+
+    url('../fonts/IRANSans/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: IRANSans !important;
+}
+
+a{
+  color:#212121;
+  transition: all 0.2s linear;
+}
+a:hover{
+  text-decoration: none;
+  color: #5095e4;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.bg-form-style {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.Recruitment {
+
+  background-color: #5095e4;
+}
+
+.pcode-style {
+  width: 50%;
+  border-bottom: 1px dotted #212121;
+}
+
+.Recruitment .btn-success:hover {
+  /* color: #fff !important;
+  background-color: transparent;
+  border-color: rgb(15, 224, 15); */
+  -webkit-box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.3);
+}
+/*********** scroll style start *************/
+::-webkit-scrollbar {
+  width: 10 px;
+  background-color: #c4dcf3 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #091b2f;
+  border-radius: 5 px;
+}
+/*********** scroll style end *************/
+
+
+
+/***************** inex page START ******************/
+  
+.btn-custom {
+  position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 50px;
+  background: none;
+  padding: 25px 75px;
+  margin: 30px 75px;
+}
+
+.btn-custom a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, .05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 30px;
+  color: #fff;
+  z-index: 1;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;  
+  backdrop-filter: blur(15px)
+}
+
+.btn-custom:hover a {
+  letter-spacing: 3px;
+}
+
+.btn-custom a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: 
+    linear-gradient(to left, rgba(255, 255, 255, .15), transparent);
+  transform: skewX(40deg) translateX(0);
+  transition: all .5s ease-out;
+}
+
+.btn-custom:hover a::before {
+  transform: skewX(40deg) translateX(200%);
+}
+
+.btn-custom::before,
+.btn-custom::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 10px;
+  border-radius: 10px;
+  background: #f00;
+  transition: all .4s ease-in-out;
+  transition-delay: 0s;
+}
+
+.btn-custom::before {  
+  bottom: -5px;
+}
+
+.btn-custom::after {
+  top: -5px;
+}
+
+.btn-custom:hover::before,
+.btn-custom:hover::after{  
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: .3s;
+}
+
+.btn-custom:hover::before {
+  bottom: 0;
+}
+
+.btn-custom:hover::after {
+  top: 0;
+}
+
+.btn-custom:nth-child(1)::before,
+.btn-custom:nth-child(1)::after {
+  background: #ff7979;
+  box-shadow: 
+    0 0 5px #ff7979,
+    0 0 15px #ff7979,
+    0 0 30px #ff7979,
+    0 0 60px #ff7979
+}
+
+.btn-custom:nth-child(2)::before,
+.btn-custom:nth-child(2)::after {
+  background: #2bd2ff;
+  box-shadow: 
+    0 0 5px #2bd2ff,
+    0 0 15px #2bd2ff,
+    0 0 30px #2bd2ff,
+    0 0 60px #2bd2ff
+}
+
+.btn-custom:nth-child(3)::before,
+.btn-custom:nth-child(3)::after {
+  background: #1eff45;
+  box-shadow: 
+    0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45
+}
+
+.btn-custom:nth-child(4)::before,
+.btn-custom:nth-child(4)::after {
+  background: #fffa65;
+  box-shadow: 
+    0 0 5px #fffa65,
+    0 0 15px #fffa65,
+    0 0 30px #fffa65,
+    0 0 60px #fffa65
+}
+.btn-custom:nth-child(5)::before,
+.btn-custom:nth-child(5)::after {
+  background: #451bcc;
+  box-shadow: 
+    0 0 5px #451bcc,
+    0 0 15px #451bcc,
+    0 0 30px #451bcc,
+    0 0 60px #451bcc
+}
+.btn-custom:nth-child(6)::before,
+.btn-custom:nth-child(6)::after {
+  background: #ac3d39;
+  box-shadow: 
+    0 0 5px #ac3d39,
+    0 0 15px #ac3d39,
+    0 0 30px #ac3d39,
+    0 0 60px #ac3d39
+}
+.btn-custom:nth-child(7)::before,
+.btn-custom:nth-child(7)::after {
+  background: #2a404e;
+  box-shadow: 
+    0 0 5px #2a404e,
+    0 0 15px #2a404e,
+    0 0 30px #2a404e,
+    0 0 60px #2a404e
+}
+.btn-custom:nth-child(8)::before,
+.btn-custom:nth-child(8)::after {
+  background: #07f169;
+  box-shadow: 
+    0 0 5px #07f169,
+    0 0 15px #07f169,
+    0 0 30px #07f169,
+    0 0 60px #07f169
+}
+
+/***************** inex page END ******************/
+
+
+/***************** menu hamberger Start ******************/
+#header {
+  line-height: 73px;
+  font-size: 13px;
+  font-weight: 400;
+}
+#header .item {
+    padding: 0 23px;
+}
+.bt-menu:hover {
+  color: #64686a;
+}
+.bt-menu {
+  cursor: pointer;
+}
+.bt-menu:hover .ico-menu .bar::after {
+  left: 0;
+}
+.bt-menu {
+  min-width: 115px;
+  height: 70px;
+  border-right: 1px solid #e6eaea;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+}
+.bt-menu .ico-menu {
+  top: -1px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.ico-menu {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+}
+.ico-menu .bar:nth-child(1) {
+  top: 0;
+}
+.ico-menu .bar:nth-child(2) {
+  top: 4px;
+}
+.ico-menu .bar:nth-child(3) {
+  top: 8px;
+}
+.ico-menu .bar {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #202121;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.ico-menu .bar:nth-child(1)::after {
+  transition-delay: .1s;
+}
+.ico-menu .bar:nth-child(2)::after {
+  transition-delay: .2s;
+}
+.ico-menu .bar:nth-child(3)::after {
+  transition-delay: .3s;
+}
+.ico-menu .bar::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #a6abab;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  transition: .3s;
+}
+
+/***************** menu hamberger END ******************/
+
